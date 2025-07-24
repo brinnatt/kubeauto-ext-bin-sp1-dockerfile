@@ -60,7 +60,7 @@ RUN yum install -y \
 
 FROM alpine:3.16
 
-ENV EXT_BUILD_VER=1.3.0
+ENV EXT_BIN_SP1_VER=1.3.0
 
 COPY --from=rpm_rockylinux810 /usr/local/nginx/sbin/nginx /ext-bin/
 COPY --from=rpm_rockylinux810 /usr/local/sbin/chronyd /ext-bin/
